@@ -1,0 +1,99 @@
+<section class="forms">
+    <div id="error"></div>
+    <form action="/" >
+      <div class="photo__data">
+        <div class="photo__container">
+          <img id="photo" src="../img/img-Girl.svg" alt="img">
+        </div>
+        <button type="none" class="change__photo">Змінити фото</button>
+        <button type="none" class="del__photo">Видалити</button>
+      </div>
+
+      <div class="user__name">
+        <input type="text" class="form-control" id="fname" name="fname" placeholder="Ім'я" required value="">
+        <input type="text" class="form-control" id="lname" name="lname" placeholder="Прізвище" required value="">
+      </div>
+
+      <div class="about__me">
+        <h3>Про мене</h3>
+        <textarea name="form-text" class="form-control" id="about" cols="100%" required rows="5"></textarea>
+      </div>
+
+      <div class="location__data">
+        <h3>Локація</h3>
+        <select name="form-text" class="form-control" id="location" required>
+          <option value="0" disabled selected>--оберіть локацію--</option>
+          <option value="Lviv">Львів</option>
+          <option value="Odesa">Одеса</option>
+          <option value="Kyiv">Київ</option>
+        </select>
+      </div>
+
+      <div class="languages__data">
+        <h3>Мови спілкування</h3>
+        <select name="form-text" class="form-control" id="languages" required>
+          <option value="0" disabled selected>--оберіть локацію--</option>
+          <option value="English">English</option>
+          <option value="Spain">Spain</option>
+          <option value="Polish">Polish</option>
+        </select>
+      </div>
+
+      <div class="job__experience">
+        <h3>Досвід роботи</h3>
+        <div class="inputs">
+          <fieldset class="d-flex">
+            <div class="col-6 col-md-3">
+              <input class="form-check-input " type="checkbox" id="none-experience" name="none-experience" value="">
+              <label for="none-experience">Без досвіду роботи</label>
+            </div>
+            <!---->
+            <div class="col-6 col-md-3">
+              <input class="form-check-input" type="checkbox" id="experience-1-3" name="experience-from-1-3" value="">
+              <label for="experience-1-3">Від 1 до 3 років</label>
+            </div>
+          </fieldset>
+          <!---->
+          <fieldset class="d-flex">
+            <div class="col-6 col-md-3">
+              <input class="form-check-input" type="checkbox" id="experience-3-6" name="experience-from-3-6" value="">
+              <label for="experience-3-6">Від 3 до 6 років</label>
+            </div>
+            <!---->
+            <div class="col-6 col-md-3">
+              <input class="form-check-input" type="checkbox" id="experience-more-6" name="experience-more-6" value="">
+              <label for="experience-more-6">Більше 6 років</label>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="term__jobs">
+        <h3>Термін, який готова працювати</h3>
+        <fieldset>
+          <input class="form-check-input" type="checkbox" id="to-ten-days" name="to-ten-days" value="">
+          <label for="to-ten-days">до 10 днів</label> <br>
+        </fieldset>
+
+        <input class="form-check-input" type="checkbox" id="from-ten-days" name="from-ten-days" value="">
+        <label for="from-ten-days">від 10 днів і більше</label>
+      </div>
+
+      <div class="save__changes">
+        <button type="submit" class="save__btn">Зберегти зміни</button>
+      </div>
+    </form>
+    <hr>
+    <div  class="user__data">
+      <h3>Ім'я: <span id="fname__data"></span></h3>
+      <h3>Прізвище: <span id="lname__data"></span></h3>
+      <h3>Про мене: <span id="about__data"></span></h3>
+      <h3>Локація: <span id="location__data"></span></h3>
+      <h3>Мови спілкування: <span id="languages__data"></span></h3>
+      <h3>Досвід роботи: <span id="experience__data"></span></h3>
+      <h3>Термін, який готова працювати: <span id="term__data"></span></h3>    
+      
+    </div>
+  </section>
+  <div style="display: none!important;">
+  </div>
